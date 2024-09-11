@@ -1,0 +1,73 @@
+package com.greentech.monitorsampah.screen
+
+import androidx.compose.foundation.Image
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.size
+import androidx.compose.material3.Text
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.font.Font
+import androidx.compose.ui.text.font.FontFamily
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
+import com.greentech.monitorsampah.R
+import com.greentech.monitorsampah.ui.theme.Green
+import com.greentech.monitorsampah.ui.theme.Grey
+import com.greentech.monitorsampah.ui.theme.MonitorSampahTheme
+
+val cinzelFont = FontFamily(
+    Font(R.font.cinzel)
+)
+
+@Composable
+fun SplashScreen(
+    modifier: Modifier = Modifier,
+    effect: @Composable () -> Unit
+) {
+    effect()
+    Column(
+        modifier = modifier
+            .fillMaxSize(),
+        verticalArrangement = Arrangement.Center,
+        horizontalAlignment = Alignment.CenterHorizontally,
+    ) {
+        Image(
+            painter = painterResource(id = R.drawable.logo),
+            contentDescription = null,
+            modifier = Modifier.size(300.dp)
+        )
+        Row {
+            Text(
+                text = "Trash",
+                fontSize = 50.sp,
+                fontFamily = cinzelFont,
+                color = Green,
+                fontWeight = FontWeight.ExtraBold,
+            )
+            Text(
+                text = "Track",
+                fontSize = 50.sp,
+                fontFamily = cinzelFont,
+                color = Grey,
+                fontWeight = FontWeight.Black,
+            )
+        }
+    }
+}
+
+@Preview(
+    showBackground = true
+)
+@Composable
+fun SplashScreenPreview() {
+    MonitorSampahTheme {
+        SplashScreen(effect = {})
+    }
+}
