@@ -13,6 +13,7 @@ mapsCompose = "2.11.3"
 navigationCompose = "2.8.0"
 playServicesMaps = "19.0.0"
 playServicesLocation = "21.3.0"
+navigationRuntimeKtx = "2.8.0"
 
 [libraries]
 accompanist-permissions = { module = "com.google.accompanist:accompanist-permissions", version.ref = "accompanistPermissions" }
@@ -34,6 +35,7 @@ androidx-material3 = { group = "androidx.compose.material3", name = "material3" 
 maps-compose = { module = "com.google.maps.android:maps-compose", version.ref = "mapsCompose" }
 play-services-maps = { module = "com.google.android.gms:play-services-maps", version.ref = "playServicesMaps" }
 play-services-location = { group = "com.google.android.gms", name = "play-services-location", version.ref = "playServicesLocation" }
+androidx-navigation-runtime-ktx = { group = "androidx.navigation", name = "navigation-runtime-ktx", version.ref = "navigationRuntimeKtx" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

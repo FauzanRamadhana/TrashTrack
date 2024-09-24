@@ -21,8 +21,8 @@ class MainActivity : ComponentActivity() {
         setContent {
             MonitorSampahTheme {
                 val navController = rememberNavController()
-                NavHost(navController = navController, startDestination = "splash-screen") {
-                    composable("splash-screen") {
+                NavHost(navController = navController, startDestination = "splash") {
+                    composable("splash") {
                         SplashScreen(navController = navController)
                     }
                     composable("home") {
