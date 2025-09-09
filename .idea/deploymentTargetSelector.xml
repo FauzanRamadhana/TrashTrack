@@ -4,7 +4,7 @@
     <selectionStates>
       <SelectionState runConfigName="app">
         <option name="selectionMode" value="DROPDOWN" />
-        <DropdownSelection timestamp="2024-09-24T06:52:48.541794Z">
+        <DropdownSelection timestamp="2024-10-10T08:44:17.587932Z">
           <Target type="DEFAULT_BOOT">
             <handle>
               <DeviceId pluginId="LocalEmulator" identifier="path=/Users/fauzanramadhana/.android/avd/Jagoan.avd" />

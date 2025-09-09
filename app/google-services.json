@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "209667723329",
+    "firebase_url": "https://trashtrack-2d32b-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "trashtrack-2d32b",
+    "storage_bucket": "trashtrack-2d32b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:209667723329:android:4bf7b4ffe8ab06c8b1f6c0",
+        "android_client_info": {
+          "package_name": "com.greentech.monitorsampah"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_jnntZ_APkn6vD25PscDEJlA9cjdOsuw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
